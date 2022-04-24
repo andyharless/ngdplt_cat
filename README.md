@@ -64,4 +64,4 @@ StellaCoin (flagship coin for the ecosystem where the NGDPLT token arose)
 
 Other Associated CATs
 - Mostly experimental
-- Note that fractional tokens, even just 1 mojo (which makes it non-fungible) are possible
+- Note that fractional token issuance, even just 1 mojo (which makes it non-fungible) is possible
