@@ -54,13 +54,15 @@ Bias
 Avoiding Deflation
 - Limit circulation and keep a large uncirculated reserve to credibly avoid exceeding peg price
 
-StellaCoin (flagship coin for the ecosystem where the NGDPLT token arose)
+StellaCoin (STDG, flagship coin for the ecosystem where the NGDPLT token arose)
 - partakes of the quantum mechanical joke/money duality that is characteristic of altcoins
 - original idea was just "People like dog coins; let's make one."
 - Bias for Action: "Let's make this coin. We'll figure out later what to do with it."
-- Current idea is to have a loose and variable peg to NGDPLT (loose & variable, e.g. like RMB vs $ in recent decades)
+- Current idea is to have a loose and variable peg to the NGDPLT token (loose & variable, e.g. like RMB vs $ in recent decades)
 - Peg would presumably be revised upward as adoption increases and then stabilize
 - Keep a large uncirculated reserve to stabilize value and credibly avoid deflation after wide adoption
+- Considering creating a variable-issuance CAT, to be pegged directly to StellaCoin, to enable greater elasticity in use
+- Would ultimately require an L2 channel for small transactions, presumably we can piggyback on what gets developed for XCH
 
 Other Associated CATs
 - Mostly experimental
