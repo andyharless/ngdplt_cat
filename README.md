@@ -3,7 +3,7 @@ Chia Asset Token for US Nominal GDP
 
 ### The Greypaper
 
-NOTE: Since USDS turns out not to be a reliable proxy for USD, I will be pricing peg offere in XCH instead, using a point-in-time price quote, probably the most recent available quote ar the time the advance GDP report is released.
+NOTE: Since USDS turns out not to be a reliable proxy for USD, I will be pricing peg offers in XCH instead, using a point-in-time price quote, probably the most recent available quote at the time the advance GDP report is released.
 
 Background
 - My preferred monetary policy is Nominal GDP Level Path Targeting at about 5%/year using 2007Q4 as a base
