@@ -5,7 +5,7 @@ BASE_NGDP = 14715.1
 BASE_PRICE = 1
 
 DEFAULT_YQ = '2023q2'
-DEFAULT_NGDP = '23320'
+DEFAULT_NGDP = '27000'
 DEFAULT_XCHUSD = '35'
 
 def input_default(prompt, default):
@@ -26,6 +26,9 @@ diff_yrs = year - base_yr + (qtr - base_qtr) / 4
 
 target_ngdp = BASE_NGDP * (1 + TARGET_PATH_GROWTH_RATE) ** diff_yrs
 usd_price = BASE_PRICE * ngdp / target_ngdp
+inv_usd_price = 2 - usd_price
 
 xch_price = usd_price / xchusd
+inv_xch_price = inv_usd_price / xchusd
 print(f'\nTarget price of NGDPLT token is  XCH{xch_price: .4}')
+print(f'Target price of INGDP token is  XCH{inv_xch_price: .4}')
