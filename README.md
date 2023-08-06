@@ -8,7 +8,7 @@ NOTE: Since USDS turns out not to be a reliable proxy for USD, I will be pricing
 Background
 - My preferred monetary policy is Nominal GDP Level Path Targeting at about 5%/year using 2007Q4 as a base
 - This would roughly extrapolate NGDP from the 2 decades leading to 2007
-- Actual policy targets since 2008 have been much less aggressive, too disinflationary, and ineffective, in part because the weak targets encouraged money hoarding
+- Actual policy targets since 2008 have been much less aggressive, too disinflationary, and ineffective, in part because the weak targets encouraged money hoarding. [To be clear, "too disinflationary" *on average*; obviously recently there has been a lot of dollar inflation, but in my view, it hasn't been enough to make up for the weak US nominal growth since 2008 so as to create a precedent that would discourage future money hoarding.]
 - I can't really do anything about US monetary policy, but at least I can model what I would prefer it to be
 
 Purpose of Token
@@ -52,8 +52,8 @@ Optionality
 - Ultimately, like any option, it should be priced, with premium reflected in issue price (along with, in the other direction, time value of wealth)
 
 Bias
-- If (likely given Fed's target) NGDP rises less that 5%/year in the long run, value of NGDPLT will predictably go down, and value of INGDP will go up
-- Maybe ultimately need to offer interest payments on NGDPLT ("staking")
+- If (likely given Fed's target) NGDP rises less that 5%/year in the long run, value of NGDPLT will predictably go down, and value of INGDP will go up. [This is less clear now, as of 2023. It's possible that the inflation rate will be higher than 2% going forward or that real growth will be as high as 3%, but given slow underlying labor force growth and the Fed's impliict commitment to its inflation target, both of these possibilities still seem unlikely to me, at least in the longer run assuming that the Fed won't explicitly change its inflation target.]
+- Maybe ultimately need to offer interest payments on NGDPLT ("staking" in a very rough sense).  If interest rates remain significantly above zero, we should ultimately expect both tokens to earn interest (but with a higher rate on NGDPLT), since the pair can in theory be arbitraged with interest-bearing US dollar instruments.
 
 Avoiding Deflation
 - Limit circulation and keep a large uncirculated reserve to credibly avoid exceeding peg price
