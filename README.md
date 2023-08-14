@@ -14,7 +14,7 @@ Background
 Purpose of Token
 - speculative/hedging vehicle for those with opinions or interest in US GDP
 - signal of where US GDP is headed, for planning/policy purposes
-- standard of value rooted in productive capacity
+- standard of value rooted in productive capacityGross Domestic Product
 - possible target for monetary policy????
 - possible anchor for money-like crypto tokens not tied directly to fiat
 
@@ -23,7 +23,7 @@ Defined Value
 - Increase NGDPLT value by actual US Nominal GDP growth since then
 - Reduce NGDPLT by 5% per year (to give "normal" inflation rate relative to production)
 - This is what the value of a dollar would be if the Fed had successfully pursued a 5% nominal GDP path since 2007Q4 and real GDP had followed its actual historical path
-- This value is the implicit USD value of 1 NGDPLT. For pegging purposes, values will be calculated from the Advance [GDP](https://www.bea.gov/data/gdp/gross-domestic-product) Estimate when [released](https://www.bea.gov/news/schedule) (e.g., July 27, 2023 for 2023Q2), and after the pegging period (probably 1 week) expires, values will be allowed to float until the next advance report in the subsequent quarter.  (Note that NGDP is Line 1 of Table 3, so [for example](https://www.bea.gov/sites/default/files/2023-04/gdp1q23_adv.pdf) it was $26465.9 billion in the advance report for 2023Q2. The level of NGDP is not usually reported in the headline of a news release, but the table can normally be found under Related Materials.)
+- This value is the implicit USD value of 1 NGDPLT. For pegging purposes, values will be calculated from the Advance [GDP](https://www.bea.gov/data/gdp/gross-domestic-product) Estimate when [released](https://www.bea.gov/news/schedule) (e.g., July 27, 2023 for 2023Q2), and after the pegging period (probably 1 week) expires, values will be allowed to float until the next advance report in the subsequent quarter.  (Note that NGDP is Line 1 of Table 3, so [for example](https://www.bea.gov/sites/default/files/2023-07/gdp2q23_adv.pdf) it was $26835.0 billion in the advance report for 2023Q2. The level of NGDP is not usually reported in the headline of a news release, but the table can normally be found under "Full Release and Tables", which should be a link under the "Related Materials" tab of the "News Release" page or in the "Current Release" box of the "Gross Domestic Product" page.)
 - ~Use Stably USDS stablecoin as proxy for actual US Dollars~ For pegging purposes, calcuate value of NGDPLT in XCH using the XCHUSD rate reported by [CoinGecko](https://www.coingecko.com/en/coins/chia) as of the time the Advance GDP Report is released.
 - INGDP (Inverse NGDP token) value defined so that 1 INGDP and 1 NGDPLT have a combined value of $2 ~USDS~ [based on XCHUSD exchange rate applied] ~USDS~
 - NGDPLT value calculated as of 2021Q4:
