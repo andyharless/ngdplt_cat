@@ -8,7 +8,7 @@ DEFAULT_YQ = '2023q3'
 DEFAULT_NGDP = '26835'
 DEFAULT_XCHUSD = '31'
 DEFAULT_NMONTHS = '0'
-DEFAULT_DISCRATE = '5.0'
+#DEFAULT_DISCRATE = '5.0'
 DEFAULT_GROWTH = '5.0'
 DEFAULT_PREVIOUS = 'n'
 
@@ -27,13 +27,22 @@ while yesno not in ('y', 'n'):
 if (yesno == 'y'):
     growth = float(input_default("Enter assumed annualized growth rate over quarter", 
                                  DEFAULT_GROWTH)) / 100
-    ngdp = ngdp * (1 + growth) ** 0.25
+     # Commented out this line.
+     # We should be using actual NGDP right now, 
+     #   not the expected NGDP when the report is released
+     # If you use the latter and discount it by the interest rate
+     #   there will be an expected discontinuity in price 
+     #   at the time of the report unless r=g
+#    ngdp = ngdp * (1 + growth) ** 0.25
+else:
+    growth = 0
                                 
 timelag = float(input_default("Enter number of months until advance GDP report",
                               DEFAULT_NMONTHS)) / 12
 xchusd = float(input_default("Enter dollar price for 1 XCH", DEFAULT_XCHUSD))
-r = float(input_default("Enter interest rate in percent",
-                        DEFAULT_DISCRATE)) / 100
+# Don't need interest rate, because we should not discount
+#r = float(input_default("Enter interest rate in percent",
+#                        DEFAULT_DISCRATE)) / 100
 
 year = int(curqtr[:4])
 qtr = int(curqtr[-1])
@@ -44,7 +53,11 @@ diff_yrs = year - base_yr + (qtr - base_qtr) / 4
 
 ngdp = ngdp * (1 + growth) ** timelag
 target_ngdp = BASE_NGDP * (1 + TARGET_PATH_GROWTH_RATE) ** diff_yrs
-usd_price = (BASE_PRICE * ngdp / target_ngdp) / (1 + r) ** timelag
+# Commented out (changed) this line: we should not be discounting,
+#   otherwise there will be an expected price discontinuity
+#   at the time of the report when growth and interest rates differ
+#usd_price = (BASE_PRICE * ngdp / target_ngdp) / (1 + r) ** timelag
+usd_price = (BASE_PRICE * ngdp / target_ngdp)
 inv_usd_price = 2 - usd_price
 
 xch_price = usd_price / xchusd
