@@ -14,7 +14,7 @@ Background
 Purpose of Token
 - speculative/hedging vehicle for those with opinions or interest in US GDP
 - signal of where US GDP is headed, for planning/policy purposes
-- standard of value rooted in productive capacityGross Domestic Product
+- standard of value rooted in productive capacity
 - possible target for monetary policy????
 - possible anchor for money-like crypto tokens not tied directly to fiat
 
@@ -39,7 +39,7 @@ Target price = (23992/14715)/(1.05^14) = 0.8235 USDS
 Why both NGDPLT and INGDP?
 - enables speculation/hedging in both directions without requiring short sales
 - enables issuer to remain neutral (or to choose an orientation on the bullish/bearish spectrum rather than being implicitly always bearish, as would be the case with only the NGDPLT token)
-- facilitates initial distribution of tokens by providing a USDS anchor against which to measure issuing offer prices for matched pairs
+- facilitates initial distribution of tokens by providing a ~USDS~ dollar-linked anchor against which to measure issuing offer prices for matched pairs
 
 
 How to Enforce Value
