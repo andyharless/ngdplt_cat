@@ -62,7 +62,7 @@ def get_offer_status(offer_id, host='localhost', port=WALLET_PORT):
     d = {}
     d['trade_id'] = offer_id
     answer = requests.post(
-                make_url('get_offer'),
+                make_url('get_offer', host=host, port=port),
                 data=json.dumps(d), 
                 headers={'Content-Type': 'application/json'}, 
                 cert=cert, verify=False
@@ -81,7 +81,7 @@ def cancel_offer_by_id(offer_id, fee=10000, secure=True, host='localhost',
     d['fee'] = fee
     d['secure'] = secure
     answer = requests.post(
-                make_url('cancel_offer'),
+                make_url('cancel_offer', host=host, port=port),
                 data=json.dumps(d), 
                 headers={'Content-Type': 'application/json'}, 
                 cert=cert, verify=False
