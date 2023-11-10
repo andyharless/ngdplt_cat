@@ -55,7 +55,7 @@ def cancel_offers_by_id(id_list, fee=DEFAULT_FEE, secure=True,
 
     assert cancelled == id_list
             
-    return cancelled
+    return len(cancelled)
 
 
 def get_offer_status(offer_id, host='localhost', port=WALLET_PORT):
