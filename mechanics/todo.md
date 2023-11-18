@@ -1,0 +1,8 @@
+- Send, wait, and offer function:
+  - log into funding account
+  - wait for sync
+  - send the offered amount to trading account
+  - log into the trading account
+  - wait for sync
+  - wait for transaction
+  - generate offer
