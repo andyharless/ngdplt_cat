@@ -49,9 +49,9 @@ qtr = int(curqtr[-1])
 print(f'Calculating for year {year}, quarter {qtr} ')
 base_yr = BASE_YR
 base_qtr = BASE_QTR
-diff_yrs = year - base_yr + (qtr - base_qtr) / 4
+diff_yrs = year - base_yr + (qtr - base_qtr) / 4 - timelag
 
-ngdp = ngdp * (1 + growth) ** timelag
+ngdp = ngdp * (1 + growth) ** (.25 - timelag)
 target_ngdp = BASE_NGDP * (1 + TARGET_PATH_GROWTH_RATE) ** diff_yrs
 # Commented out (changed) this line: we should not be discounting,
 #   otherwise there will be an expected price discontinuity
